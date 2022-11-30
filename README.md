@@ -8,7 +8,6 @@ This repository provides the code for MedViLL(Medical Vision Language Learner).
  
 ## 1) Downloads.
 ### Pre-trained weights.
-We provide five versions of BERT-based pre-trained weights with different types of self-attention masks. Pre-training for the joint embedding was built on the BERT-base architecutre(12 hidden layers, 12 attention heads, 768 hidden size), and training details are described in our paper. Currently avaliable versions of pre-trained weights are as follows:
  
 - [MedViLL](https://drive.google.com/file/d/1shOQrOWbkIeUUsQN48fEP6wj0e266jOb/view?usp=sharing) - BERT-Base model with Bidirectional Auto-regressive attention mask.
 
@@ -27,8 +26,8 @@ Sections below describe the virtual env installation and the fine-training proce
 To fine-tune MedViLL, you need to download the pre-trained weights of MedViLL. After downloading the pre-trained weights, use medvill.yaml to install conda based virtual env as follows:
 
 ```
-$ git clone https://github.com/SuperSupermoon/MedViLL.git
-$ cd Radiology_report_Generation ; conda env create --file medvill.yaml
+$ git clone https://github.com/praveenkumar-ctrl/Radiology-Report-generation.git
+$ cd Radiology-report-Generation ; conda env create --file medvill.yaml
 ```
 
  
@@ -38,7 +37,7 @@ $ cd Radiology_report_Generation ; conda env create --file medvill.yaml
 Unzip mimic, openi, and VQA-RAD tar.gz files. 
 
 ```
-$ cd Radiology_report_Generation; tar -zxvf [file_name.tar.gz]
+$ cd Radiology-report-Generation; tar -zxvf [file_name.tar.gz]
 ```
 
 ### Section C. Pre-training model
