@@ -43,7 +43,7 @@ $ cd Radiology-report-Generation; tar -zxvf [file_name.tar.gz]
 ### Section C. Pre-training model
 Example:
 ```
-$ cd MedViLL
+$ cd Radiology-report-Generation
 $ python main.py
 ```
 
@@ -53,6 +53,6 @@ $ python main.py
 - Report Generation
 Example:
 ```
-$ cd MedViLL/downstream_task/report_generation_and_vqa
+$ cd Radiology-report-Generation/downstream_task/report_generation_and_vqa
 $ python finetune.py --tasks report_generation --mask_prob 0.15 --s2s_prob 1 --bi_prob 0
 ```
